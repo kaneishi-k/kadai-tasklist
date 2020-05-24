@@ -26,7 +26,7 @@ public class Task {
         private Integer id;
 
         @Column(name = "content", length = 255, nullable = false)  //タスクの内容
-        private String title;
+        private String content;
 
         @Column(name = "created_at", nullable = false)
         private Timestamp created_at;
@@ -43,12 +43,12 @@ public class Task {
             this.id = id;
         }
 
-        public String getTitle() {
-            return title;
+        public String getContent() {
+            return content;
         }
 
-        public void setTitle(String title) {
-            this.title = title;
+        public void setContent(String content) {
+            this.content = content;
         }
 
         public Timestamp getCreated_at() {
