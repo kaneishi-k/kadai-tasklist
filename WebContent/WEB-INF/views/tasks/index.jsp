@@ -10,8 +10,9 @@
                     <a href="${pageContext.request.contextPath}/show?id=${task.id}">
                         <c:out value="${task.id}" />
                     </a>
-                    ：作成 <fmt:formatDate value="${task.created_at}" pattern="yyyy-MM-dd HH:mm:ss" />
-                     ; 更新<fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
+
+                    ：更新 <fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
+
                 </li>
             </c:forEach>
         </ul>
