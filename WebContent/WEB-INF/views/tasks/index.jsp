@@ -16,7 +16,7 @@
                         <c:out value="${task.id}" />
                     </a>
 
-                    ：更新 <fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
+                    ：<c:out value="${task.content}" />
 
                 </li>
             </c:forEach>
